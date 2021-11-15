@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+font-size: 1.3em;
+background-color: beige;
 
+}
+content{
+width:90%;
+margin:auto;
+}
+
+h1 {
+text-align:center;
+}
+
+form {
+margin-left:5%;
+}
+input {
+margin-bottom:2%;
+}
+input#submit {
+display:block;
+background-color:#33ff99;
+font-weight:bold;
+padding: 20px;
+font-size: 1.5em;
+}
+
+select option {
+font-size: 1.75em;
+width: 150px;
+}
+  </style>
+
+</head>
+
+<body>
+
+<h1>Music Survey</h1>
+
+<div>
+<form action="/https://idesstage2.bc.edu/class/results.php">
+  <label for="fname">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+</form> 
+</div>
+
+<div>
+<form action="/action_page.php">
+  <p><b>Select Your Favorite Type of Music</b></p>
+  <input type="checkbox" id="music1" name="music1" value="Pop">
+  <label for="music1"> Pop</label><br>
+  <input type="checkbox" id="music2" name="music2" value="Classical">
+  <label for="music2"> Classical</label><br>
+  <input type="checkbox" id="music3" name="music3" value="Rock">
+  <label for="music3"> Rock</label><br><br>
+  <input type="checkbox" id="music4" name="music4" value="Folk">
+  <label for="music4"> Folk</label><br>
+  <input type="checkbox" id="music5" name="music5" value="Rap">
+  <label for="music5"> Rap</label><br>
+  <input type="checkbox" id="music6" name="music6" value="Other">
+  <label for="music6"> Other</label><br><br>
+</form> 
+</div>
+
+<div>
+   
+<form action="/https://idesstage2.bc.edu/class/results.php"> 
+  <p><b>How often do you purchase CD?</b></p>
+<input type="radio" id="weekly" name="fav_language" value="weekly">
+<label for="weekly">Wekly</label><br>
+<input type="radio" id="a few per year" name="fav_language" value="few per year">
+<label for="a few per year">A few per year</label><br>
+<input type="radio" id="monthly" name="fav_language" value="monthly">
+<label for="monthly">Monthly</label><br><br>
+<input type="radio" id="never" name="fav_language" value="never">
+<label for="never">Never</label><br><br>
+</form> 
+
+  </select>
+  </form>
+</div>
+
+<div>
+  <form action="/action_page.php">
+ <p><b>Select the location you listen to music</b></p>
+  <select id="music" name="music">
+    <option value="at home">At home</option>
+    <option value="break time">In break time</option>
+    <option value="yard">In the back yard</option>
+    <option value="living room">In the living room</option>
+  </select>
+</form>
+</div>
+
+<div>
+  <form action="/https://idesstage2.bc.edu/class/results.php">
+    <p><b>What role does music play in your life?</b></p>
+  <textarea name="message" rows="3" cols="60"></textarea>
+  <br>
+</form>
+</div>
+
+<div>
+  <form>
+    <input type="submit" value="Send survey">
+  </form>
+</div>
+
+</body>
+</html>
