@@ -8,7 +8,12 @@
    <meta name="author" content="Your Name">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <style rel="stylesheet" href="style.css"> </style>
+   <style> 
+       img {
+       display: none;
+       width:100%;
+       }  
+   </style>
 
     
  </head>
@@ -20,7 +25,109 @@
         <img src="https://picsum.photos/1000/303">
     </div>
 
-    <script src="In Class.js"> </script>
+    <script>
+      const images = document.querySelectorAll("img");
+setInterval(function(){
+console.log("I run every 2 seconds indefinitely");
+}, 2000)
+
+let i = 0;
+images[i].style.display = 'block';
+const images = document.querySelectorAll("img"); 
+
+let i = 0;
+
+setInterval(function(){
+images[i].style.display = 'block';
+i++;
+}, 2000);
+
+const images = document.querySelectorAll("img"); 
+
+let i = 0;
+
+setInterval(function(){
+
+images.forEach( (img, i) => {
+img.style.display = 'none';
+})
+
+images[i].style.display = 'block';
+i++;
+
+}, 2000);
+
+const images = document.querySelectorAll("img"); 
+
+let i = 0;
+
+setInterval(function(){ 
+
+images.forEach( (img, i) => {
+img.style.display = 'none';
+})
+
+if( i == images.length) {
+i = 0; 
+}
+
+images[i].style.display = 'block';
+
+i++;
+
+}, 2000);
+
+const images = document.querySelectorAll("img"); 
+
+let i = 0;
+
+setInterval(function(){ 
+// get rid of everything in here
+i++;
+
+}, 2000);
+
+setInterval(function(){ 
+
+if(i == 0) {
+images[i].style.display = 'block';
+}
+
+i++;
+
+}, 2000);
+
+setInterval(function(){ 
+
+if(i == 0) {
+images[i].style.display = 'block';
+} else {
+images[i - 1].style.display = 'none';
+images[i].style.display = 'block';
+}
+
+i++;
+
+}, 2000);
+
+setInterval(function(){ 
+
+if(i == 0) {
+images[i].style.display = 'block';
+} else if(i == images.length ) {
+images[i - 1].style.display = 'none';
+images[0].style.display = 'block';
+i = 0;
+} else {
+images[i - 1].style.display = 'none';
+images[i].style.display = 'block';
+}
+
+i++;
+
+}, 2000);
+
+    </script>
     
  </body>
 </html>
